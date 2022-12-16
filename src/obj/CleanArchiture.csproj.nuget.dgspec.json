@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "/root/Downloads/CleanArchiture/src/CleanArchiture.csproj": {}
+  },
+  "projects": {
+    "/root/Downloads/CleanArchiture/src/CleanArchiture.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/root/Downloads/CleanArchiture/src/CleanArchiture.csproj",
+        "projectName": "CleanArchiture",
+        "projectPath": "/root/Downloads/CleanArchiture/src/CleanArchiture.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/root/Downloads/CleanArchiture/src/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.1-dev-01629, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/mnt/esdras/Downloads/dotnet3.1/sdk/3.1.413/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

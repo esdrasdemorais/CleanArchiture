@@ -1,0 +1,10 @@
+using System;
+using MediatR;
+
+namespace CleanArchiture.Application.UseCases
+{
+    public class CleanArchitureRequest : IRequest<Unit>
+    {
+	public String Base64 { get; set; }
+    }
+}

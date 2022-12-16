@@ -1,0 +1,36 @@
+using MediatR;
+using AutoMapper;
+using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
+using CleanArchiture.Application.UseCases;
+using CleanArchiture.Application.Mapping;
+
+namespace CleanArchiture.Application.Extensions
+{
+    public static class ApplicationExtensions
+    {
+	public static IServiceCollection AddApplication(this IServiceCollection services)
+    	{
+	    services.AddUseCases();
+	    services.AddAutoMapperConfig();
+	    return services;
+	}
+
+	public static IServiceCollection AddUseCases(this IServiceCollection services)
+	{
+	    services.AddScoped<ICleanArchiture, CleanArchitureHandler>();
+	    return services;
+	}
+
+	public static IServiceCollection AddAutoMapperConfig(this IServiceCollection services)
+	{
+	    services.AddAutoMapper(config => { config.AddProfile<CleanArchitureProfile>(); });
+	    return services;
+	}
+
+	public static IServiceCollection AddMediatorToUseCases(this IServiceCollection services)
+	{
+	    services.AddMediatR(typeof(Startup));
+	}
+    }
+}
